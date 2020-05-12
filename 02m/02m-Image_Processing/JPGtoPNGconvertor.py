@@ -12,7 +12,7 @@ new_folder = str(sys.argv[2])
 if not os.path.exists(new_folder):
     os.makedirs(new_folder)
 
-# loop through files in dir and convert to PNGs
+# loop through files in dir and convert to PNG
 for filename in os.listdir(folder):
     if filename.endswith((".jpg")):
         img = Image.open(f'./{folder}{filename}')
